@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>易百站 - 99元永久建站 | 无年费 永久在线</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0F4C81', // 深蓝主色
+                        accent: '#FFD700', // 金色强调
+                        dark: '#1A202C',
+                        light: '#F7FAFC'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            }
+            .btn-glow {
+                box-shadow: 0 0 20px rgba(255,215,0,0.5);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 10px 30px rgba(15,76,129,0.2);
+            }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-primary to-dark min-h-screen text-white font-sans">
+    <!-- 顶部横幅（冲击力主视觉） -->
+    <header class="relative py-16 md:py-24 overflow-hidden">
+        <!-- 背景装饰 -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute w-64 h-64 bg-accent rounded-full blur-3xl top-10 -left-20"></div>
+            <div class="absolute w-80 h-80 bg-primary rounded-full blur-3xl bottom-10 -right-20"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10 text-center">
+            <!-- 限时特惠标签 -->
+            <span class="inline-block bg-accent text-dark font-bold py-2 px-6 rounded-full mb-6 text-lg animate-pulse">
+                🔥 限时特惠 仅剩最后名额
+            </span>
+            <!-- 主标题（超大加粗，强冲击） -->
+            <h1 class="text-[clamp(2.5rem,8vw,5rem)] font-black text-shadow mb-4">
+                易百站 · 永久建站
+            </h1>
+            <!-- 副标题 -->
+            <p class="text-[clamp(1.2rem,3vw,1.8rem)] text-gray-200 mb-8 max-w-3xl mx-auto">
+                一次付费 · 永久拥有 · 无年费 · 永久在线托管
+            </p>
+            <!-- 价格对比（核心卖点，超醒目） -->
+            <div class="flex flex-wrap justify-center items-center gap-6 mb-10">
+                <span class="text-3xl line-through text-gray-400">原价 ¥299</span>
+                <span class="text-[clamp(3rem,10vw,6rem)] font-black text-accent">¥99</span>
+                <span class="text-2xl bg-accent/20 py-2 px-4 rounded-lg">起步价</span>
+            </div>
+            <!-- 行动按钮 -->
+            <a href="#contact" class="inline-block bg-accent text-dark font-bold py-4 px-10 rounded-full text-xl btn-glow hover:bg-accent/90 transition-all">
+                立即建站 →
+            </a>
+        </div>
+    </header>
+
+    <!-- 核心卖点区（4大核心，简洁图标化） -->
+    <section class="py-16 bg-light text-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">为什么选择易百站？</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- 卖点1：永久无年费 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-check-circle text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">0年费 · 永久在线</h3>
+                    <p class="text-gray-600">一次付费，终身托管，无任何续费和隐藏费用</p>
+                </div>
+                <!-- 卖点2：免费SSL证书 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-lock text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">免费HTTPS安全证书</h3>
+                    <p class="text-gray-600">免费绑定SSL证书，加密连接，网站安全有保障</p>
+                </div>
+                <!-- 卖点3：零基础上手 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-code text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">无需技术基础</h3>
+                    <p class="text-gray-600">不懂代码也能做，提供资料，专业团队全程制作</p>
+                </div>
+                <!-- 卖点4：自定义域名 -->
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover text-center">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fa fa-globe text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">专属域名绑定</h3>
+                    <p class="text-gray-600">赠送二级域名，+30元即可绑定自有域名</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 套餐价格区（清晰对比，大气排版） -->
+    <section class="py-16 bg-gray-50 text-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">透明定价 · 无隐藏费用</h2>
+            <p class="text-gray-600 text-center mb-12">简单直接，按需选择，一次付费终身无忧</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- 基础版 -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl card-hover border-t-4 border-primary">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold mb-2">基础版</h3>
+                        <div class="flex justify-center items-center gap-3">
+                            <span class="text-2xl line-through text-gray-400">¥299</span>
+                            <span class="text-4xl font-black text-primary">¥99</span>
+                        </div>
+                        <span class="inline-block bg-accent text-dark text-sm font-bold py-1 px-3 rounded mt-2">限时特惠</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><i class="fa fa-check text-green-500 mr-2"></i> 公司/个人/组织宣传页制作</li>
+                        <li class="flex items-center"><i class="fa fa-check text-green-500 mr-2"></i> 永久在线托管+免费维护</li>
+                        <li class="flex items-center"><i class="fa fa-check text-green-500 mr-2"></i> 免费赠送二级域名（xxx.eiba.cn）</li>
+                        <li class="flex items-center"><i class="fa fa-check text-green-500 mr-2"></i> 免费HTTPS安全证书</li>
+                        <li class="flex items-center"><i class="fa fa-check text-green-500 mr-2"></i> 专业排版+视觉优化</li>
+                    </ul>
+                    <a href="#contact" class="block w-full bg-primary text-white text-center py-3 rounded-lg font-bold hover:bg-primary/90 transition-all">
+                        选择套餐
+                    </a>
+                </div>
+                <!-- 自定义域名版 -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl card-hover border-t-4 border-accent">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold mb-2">自定义域名版</h3>
+                        <div class="flex justify-center items-center gap-3">
+                            <span class="text-2xl line-through text-gray-400">¥359</span>
+                            <span class="text-4xl font-black text-accent">¥129</span>
+                        </div>
+                        <span class="inline-block bg-accent text-dark text-sm font-bold py-1 px-3 rounded mt-2">限时特惠</span>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><i class="fa fa-check text-green-500 mr-2"></i> 包含基础版全部权益</li>
+                        <li class="flex items-center"><i class="fa fa-check text-green-500 mr-2"></i> 绑定自有独立域名（xxx.com）</li>
+                        <li class="flex items-center"><i class="fa fa-check text-green-500 mr-2"></i> 域名接入全程技术支持</li>
+                        <li class="flex items-center"><i class="fa fa-check text-green-500 mr-2"></i> 后期域名免费维护</li>
+                        <li class="flex items-center"><i class="fa fa-check text-green-500 mr-2"></i> 品牌独立，提升专业形象</li>
+                    </ul>
+                    <a href="#contact" class="block w-full bg-accent text-dark text-center py-3 rounded-lg font-bold hover:bg-accent/90 transition-all">
+                        选择套餐
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 成功案例区（简洁展示，增强信任） -->
+    <section class="py-16 bg-white text-dark">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">真实案例 · 实力见证</h2>
+            <p class="text-gray-600 text-center mb-12">覆盖多行业，极简高端设计，助力品牌线上展示</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- 案例1 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-40 bg-primary/20 flex items-center justify-center">
+                        <span class="text-2xl font-bold text-primary">疗愈馆</span>
+                    </div>
+                    <div class="p-4 text-center">
+                        <p class="text-gray-600">1.54.company</p>
+                    </div>
+                </div>
+                <!-- 案例2 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-40 bg-primary/20 flex items-center justify-center">
+                        <span class="text-2xl font-bold text-primary">舒适家居</span>
+                    </div>
+                    <div class="p-4 text-center">
+                        <p class="text-gray-600">kewa.eiba.cn</p>
+                    </div>
+                </div>
+                <!-- 案例3 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-40 bg-primary/20 flex items-center justify-center">
+                        <span class="text-2xl font-bold text-primary">健身俱乐部</span>
+                    </div>
+                    <div class="p-4 text-center">
+                        <p class="text-gray-600">jianshen.eiba.cn</p>
+                    </div>
+                </div>
+                <!-- 案例4 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover">
+                    <div class="h-40 bg-primary/20 flex items-center justify-center">
+                        <span class="text-2xl font-bold text-primary">独立书店</span>
+                    </div>
+                    <div class="p-4 text-center">
+                        <p class="text-gray-600">100.eiba.cn</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系咨询区（强转化，简洁大气） -->
+    <section id="contact" class="py-16 bg-gradient-to-br from-primary to-dark text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">立即咨询 · 开启永久建站</h2>
+            <p class="text-gray-200 mb-8 max-w-2xl mx-auto">
+                无需等待，工作日快速响应，专业团队1对1服务，让您的品牌永续在线
+            </p>
+            <div class="inline-flex items-center gap-4 bg-white/10 rounded-full py-4 px-8 backdrop-blur-sm">
+                <i class="fa fa-qq text-3xl text-accent"></i>
+                <div class="text-left">
+                    <p class="text-sm text-gray-200">官方客服QQ</p>
+                    <p class="text-2xl font-bold">617120025</p>
+                </div>
+            </div>
+            <p class="mt-6 text-gray-300">添加QQ，立即锁定限时优惠</p>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="py-6 bg-dark text-gray-400 text-center">
+        <p>© 2026 易百站 eiba.cn | 永久在线宣传站点定制服务</p>
+    </footer>
+
+    <!-- 悬浮咨询按钮（移动端友好） -->
+    <a href="#contact" class="fixed bottom-6 right-6 bg-accent text-dark w-14 h-14 rounded-full flex items-center justify-center shadow-lg btn-glow z-50 md:hidden">
+        <i class="fa fa-comments text-xl"></i>
+    </a>
+</body>
+</html>
